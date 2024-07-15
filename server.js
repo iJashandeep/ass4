@@ -6,9 +6,9 @@
 * 
 * https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
 * 
-* Name: Jashandeep Singh   Student ID: 145936225   Date: 14/07/2024
+* Name: Jashandeep Singh   Student ID: 145936225  Date: 14/07/2024
 *
-* Published URL: 
+* Published URL: https://tan-lively-lobster.cyclic.app/
 *
 ********************************************************************************/
 const { log } = require("console");
