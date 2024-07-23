@@ -1,22 +1,22 @@
 {
-  "name": "assignment2",
+  "name": "my-node-app",
   "version": "1.0.0",
+  "description": "Assignment2",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch server.js",
-    "tw:build": "tailwindcss build -i ./public/css/tailwind.css -o ./public/css/main.css"
+    "start": "node server.js",
+    "build": "echo 'Nothing to build'"
   },
-  "author": "Pavneet Kaur",
+  "keywords": [
+    "app"
+  ],
+  "author": "Jashandeep Singh",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "daisyui": "^4.6.2",
-    "ejs": "^3.1.9",
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.1"
-  },
-  "description": ""
+    "express": "^4.19.2",
+    "ejs": "^3.1.8",
+    "pg": "^8.11.3",
+    "sequelize": "^6.29.0"
+  }
 }

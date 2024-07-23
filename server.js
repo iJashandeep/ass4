@@ -22,8 +22,17 @@ const path = require('path');
 const { NONAME } = require("dns");
 const app = express();
 
-app.use(express.static('public')); // set static folder
+// Setting the "views" Application Setting
+app.set('views', path.join(__dirname, 'views'));
+
+// Updating express.static() Middleware
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.set('view engine', 'ejs');
+
+// Explicitly Requiring the "pg" Module
+require('pg'); // explicitly require the "pg" module
+const Sequelize = require('sequelize');
 
 const HTTP_PORT = process.env.PORT || 8080;
 
